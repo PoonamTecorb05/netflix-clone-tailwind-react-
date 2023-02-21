@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body,
+html {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+    outline: none;
+    box-shadow: none !important;
+}
+
+/*Basic class for tailwind*/
+.nfLogo {
+    fill: #e50914;
+    line-height: normal;
+}
+.linear-bg{
+    background: linear-gradient(269.82deg, #07091c00 0.17%, #080a1ad6 99.87%)
+}
+.navbar{
+    align-items: center
+}
+.hoveres {
+    @apply hidden;
+}
+
+.hovered:hover .hoveres {
+    @apply flex-colo;
+}
+
+.flex-colo {
+    @apply flex flex-col justify-center items-center;
+}
+
+.flex-rows {
+    @apply flex flex-row justify-center items-center;
+}
+
+.flex-btn {
+    @apply flex flex-row justify-between items-center;
+}
